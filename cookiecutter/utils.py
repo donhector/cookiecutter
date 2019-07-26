@@ -116,7 +116,7 @@ def prompt_and_delete(path, no_input=False):
 def copytree(src, dst, symlinks=False, exist_ok=False):
     names = os.listdir(src)
 
-     os.makedirs(dst, exist_ok=exist_ok)
+    os.makedirs(dst, exist_ok=exist_ok)
     errors = []
     for name in names:
         srcname = os.path.join(src, name)
