@@ -322,8 +322,8 @@ def generate_files(repo_dir, context=None, output_dir='.',
                 indir = os.path.normpath(os.path.join(root, copy_dir))
                 outdir = os.path.normpath(os.path.join(project_dir, indir))
                 logger.debug(
-                    'Copying dir {} to {} without rendering'
-                    ''.format(indir, outdir)
+                    'Copying dir {} to {} without rendering and overwrite set to {}'
+                    ''.format(indir, outdir, overwrite_if_exists)
                 )
                 copytree(indir, outdir, exist_ok=overwrite_if_exists)
 
